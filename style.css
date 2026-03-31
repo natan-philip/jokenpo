@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+    --primary: #b13ef9b9;
+    --number: #f8f8f8f8;
+    --text: #87888a;
+    --btn-placar: #303031;
+    --background: #1A1C1E;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(78, 77, 77, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    max-width: 390px;
+    height: 530px;
+    padding: 12px;
+}
+
+.logo h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px #f159d040;
+    margin-top: 12px;
+    margin-bottom: 50px;
+    color: var(--primary);
+}
+
+.resultado-placar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.jogador p,
+.computador p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 24px;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.jogador span,
+.computador span {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 24px;
+    color: var(--number);
+}
+
+.vs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.044);
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 5px rgba(160, 195, 243, 0.174);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.jogar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: var(--btn-placar);
+    width: 100px;
+    height: 135px;
+    display: flex;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 12px;
+}
+
+.card:hover {
+    background-color: var(--primary);
+    transition: all .3s ease-in-out;
+    transform: translateY(-10px);
+
+    & p {
+        color: var(--number);
+        transition: all .3s ease-in-out;
+    }
+}
+
+.card span {
+    font-size: 60px;
+    line-height: 48px;
+}
+
+.card p {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 24px;
+    color: var(--text);
+}
+
+.resultado-jogo {
+    background-color: var(--btn-placar);
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px auto;
+    padding: 8px 0;
+}
+
+.player,
+.alexa {
+    font-size: 3rem;
+}
+
+.resultado {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--primary);
+    text-shadow: 0px 4px 4px #f159d040;
+    background: transparent;
+    padding: 4px 22px;
+    border-radius: 18px;
+    border: 1.5px solid var(--primary);
+}

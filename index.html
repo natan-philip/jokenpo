@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Jogo Jokenpo</title>
 </head>
+
 <body>
-    <section>
+    <section class="container">
         <div class="logo">
             <h1>Jokenpo</h1>
         </div>
-        <div class="jogar">
-            <div class="pedra">
-                <span>✊</span>
-                <p>Pedra</p>
-            </div>
-            <div class="papel">
-                <span>✋</span>
-                <p>Papel</p>
-            </div>
-            <div class="tesoura">
-                <span>✌️</span>
-                <p>Tesoura</p>
-            </div>
-        </div>
-        <div class="resultado">
+        <div class="resultado-placar">
             <div class="jogador">
-                <h2>Jogador</h2>
-                <span id="jogador">0</span>
+                <p>Jogador</p>
+                <span id="jogador">00</span>
             </div>
-            <div class="vs">
-                <p>VS</p>
-            </div>
+            <div class="vs">VS</div>
             <div class="computador">
-                <h2>Computador</h2>
-                <span id="computador">0</span>
+                <p>Alexa AI</p>
+                <span id="computador">00</span>
             </div>
         </div>
+        <div class="resultado-jogo">
+            <div class="player" id="player">✊</div>
+                <div class="resultado">
+                    <p id="resultado">Empate</p>
+                </div>
+            <div class="alexa" id="alexa">✊</div>
+        </div>
+        <div class="jogar">
+            <div class="card" id="pedra">
+                <span data-value="✊">✊</span>
+                <p data-value="Pedra">Pedra</p>
+            </div>
+            <div class="card" id="papel">
+                <span data-value="✋">✋</span>
+                <p data-value="Papel">Papel</p>
+            </div>
+            <div class="card" id="tesoura">
+                <span data-value="✌️">✌️</span>
+                <p data-value="Tesoura">Tesoura</p>
+            </div>
+        </div>
+
     </section>
 </body>
+
 </html>
