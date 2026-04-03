@@ -104,6 +104,7 @@ body {
     height: 135px;
     display: flex;
     border-radius: 50px;
+    border: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
