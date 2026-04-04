@@ -9,24 +9,47 @@
 
 :root {
     --primary: #b13ef9b9;
+    --secondary: #b13ef94a;
     --number: #f8f8f8f8;
     --text: #87888a;
-    --btn-placar: #303031;
-    --background: #1A1C1E;
+    --btn-placar: #5655550d;
 }
 
 body {
-    background-color: var(--background);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
+.background {
+    background-color: #0a0a1a;
+    background-image:
+        radial-gradient(at 20% 30%, #320d6c 0px, transparent 50%),
+        radial-gradient(at 80% 10%, #08627a 0px, transparent 50%),
+        radial-gradient(at 50% 80%, #6e1942 0px, transparent 50%);
+    background-size: 200% 200%;
+    animation: moveGradient 20s ease infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    background: rgba(78, 77, 77, 0.2);
+    background: rgba(54, 53, 53, 0.544);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -99,7 +122,11 @@ body {
 }
 
 .card {
-    background-color: var(--btn-placar);
+    background: var(--btn-placar);
+    border-radius: 16px;
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     width: 100px;
     height: 135px;
     display: flex;
@@ -113,7 +140,7 @@ body {
 }
 
 .card:hover {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     transition: all .3s ease-in-out;
     transform: translateY(-10px);
 
@@ -136,7 +163,11 @@ body {
 }
 
 .resultado-jogo {
-    background-color: var(--btn-placar);
+    background: var(--btn-placar);
+    border-radius: 16px;
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
     border-radius: 16px;
     display: flex;

@@ -9,6 +9,10 @@ const placarAlexa = document.getElementById('computador');
 // funcao descobre qual foi o item clicado
 function usuarioEscolha(event) {
     const jogador = event.currentTarget.textContent;
+    resultadoFinal.innerHTML = ' Aguarde...';
+    resultadoFinal.style.color = '#07a9f4';
+    btnResultado.style.border = '1px solid #07a9f4';
+    
     resultadoJogo(jogador);
 }
 
@@ -44,11 +48,7 @@ function resultadoJogo(escolhaJogador) {
         alexa.innerHTML = escolhaAlexaIa;
 
         const resultado = regras[emoji[escolhaJogador] + emoji[escolhaAlexaIa]];
-
-        console.log(escolhaJogador);
-        console.log(escolhaAlexaIa);
         console.log(resultado);
-        
         resultadoFinal.innerHTML = resultado + ' venceu';
 
         if (resultado === 'Você') {
@@ -75,5 +75,4 @@ function resultadoJogo(escolhaJogador) {
 // descobre qual opção o usuário escolheu e gurda na varialvel da funcao
 opcoesJogador.forEach(icone => {
     icone.addEventListener('click', usuarioEscolha)
-
 })
