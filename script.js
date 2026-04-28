@@ -35,7 +35,7 @@ function escolhaAlexa() {
 let pontosJogador = 0;
 let pontosAlexa = 0;
 
-// função que mostra o resultado na telo do usuário
+// função que mostra o resultado na tela do usuário
 function resultadoJogo(escolhaJogador) {
     const escolhaAlexaIa = escolhaAlexa();
     // resetar o resultado do jogo antes de começar
@@ -68,11 +68,11 @@ function resultadoJogo(escolhaJogador) {
             resultadoFinal.style.color = '#b13ef9b9';
             btnResultado.style.border = '1px solid #b13ef9b9';
         }
-    }, 1500);
+    }, 1000);
 
 }
 
-// descobre qual opção o usuário escolheu e gurda na varialvel da funcao
+// descobre qual opção o usuário escolheu e guarda na varialvel da funcao
 opcoesJogador.forEach(icone => {
     icone.addEventListener('click', usuarioEscolha)
 })
