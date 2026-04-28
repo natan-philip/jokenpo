@@ -38,8 +38,19 @@ jokenpo/
 - CSS3
 - JavaScript (Vanilla)
 
+## 🚀 Deploy
+
+Acesse o jogo online: [https://mini-jogo-jokenpo.vercel.app/](https://mini-jogo-jokenpo.vercel.app/)
+
 ## Como Jogar
 
+### Opção 1 — Acessar online
+1. Acesse [https://mini-jogo-jokenpo.vercel.app/](https://mini-jogo-jokenpo.vercel.app/)
+2. Clique em **Pedra** ✊, **Papel** ✋ ou **Tesoura** ✌️
+3. Aguarde 01 segundo para ver o resultado
+4. O placar é atualizado automaticamente a cada rodada
+
+### Opção 2 — Rodar localmente
 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/jokenpo.git
